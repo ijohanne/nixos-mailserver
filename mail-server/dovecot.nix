@@ -187,7 +187,7 @@ in
             group = ${postfixCfg.group}
             mode = 0600
             user = ${postfixCfg.user}
-            vsz_limit = 512 MB
+            vsz_limit = 536870912
           }
         }
 
