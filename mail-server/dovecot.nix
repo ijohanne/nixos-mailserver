@@ -118,7 +118,7 @@ in
       mailboxes = cfg.mailboxes;
 
       extraConfig = ''
-        default_vsz_limit = 512M
+        default_vsz_limit = 2G
 
         #Extra Config
         ${lib.optionalString debug ''
