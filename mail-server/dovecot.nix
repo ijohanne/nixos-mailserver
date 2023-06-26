@@ -118,6 +118,8 @@ in
       mailboxes = cfg.mailboxes;
 
       extraConfig = ''
+        default_vsz_limit = 512M
+
         #Extra Config
         ${lib.optionalString debug ''
           mail_debug = yes
@@ -187,7 +189,6 @@ in
             group = ${postfixCfg.group}
             mode = 0600
             user = ${postfixCfg.user}
-            vsz_limit = 536870912
           }
         }
 
